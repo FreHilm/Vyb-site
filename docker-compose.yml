@@ -1,0 +1,13 @@
+# Local preview for the Vyb site.
+#   docker compose up        → http://localhost:8080
+#
+# The bind-mount means edits to the HTML/CSS/JS show up on refresh — no
+# rebuild needed. Run from inside the `site/` directory.
+services:
+  site:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    restart: unless-stopped

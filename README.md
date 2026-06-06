@@ -1,4 +1,4 @@
-# Vyb promo site
+# Vyb site
 
 A single-page, zero-build landing page for Vyb. Plain HTML/CSS/JS — no
 dependencies, no compile step.
